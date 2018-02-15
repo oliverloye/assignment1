@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="style3.css">
+        <link rel="stylesheet" href="navigation.css">
+
+        <title>Assignment 1</title>
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <ul id="ulnav">
+                    <li id="btn90"><a href="index.html">Home</a></li>
+                    <li id="btn90"><a href="page1.html">Calculator</a></li>
+                    <li id="btn90"><a href="page2.html">Typing Speed Tester</a></li>
+                    <li id="btn90"><a href="page3.html">The Array</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <h2>DOM manipulation via plain JavaScript</h2>
+            <h3>And getting used to the JavaScript Array</h3>
+            <div class='inputs'>      
+                <input id="newboy" placeholder='Add boy' />
+                <button id='addboy' onclick="addBoy()">Add Boy</button>
+                <input id="newgirl" placeholder='Add girl' />
+                <button id = 'addgirl' onclick="addGirl()">Add Girl</button>
+            </div>
+            <div class='inputs'>
+                <button id='removeboy' onclick="removePerson(this.id)">Remove boy</button>
+                <button id='removegirl' onclick="removePerson(this.id)">Remove girl</button>
+                <Input type='radio' name='direction' id='first'/>  Remove first
+                <Input type='radio' name='direction' id='last'/> Remove last
+                <button id='reverse'>Reverse all</button>
+                <button id='sort'>Sort all</button>
+            </div>
+            <div class="lists">
+                <h4>Boys</h4>
+                <div id="boys">
+                    <ul id="boysList">
+                    </ul>
+                </div>
+            </div>
+            <div class="lists">
+                <h4>Girls</h4>
+                <div class="names" id="girls">
+                    <ul id="girlsList">
+                    </ul>
+                </div>
+            </div>
+            <div class="lists">
+                <h4>All</h4>
+                <div id="all">
+                    <ul id="allList">
+                    </ul>
+                </div>
+            </div>
+        </div> 
+        <script src="myScript3.js"></script>
+    </body>
+</html>
