@@ -104,17 +104,15 @@ function removePerson(gender) {
 
 //Sorts the array
 function sortNames() {
-              
-     all.sort();
+    all.sort();
     //document.getElementById("all").innerHTML = all;
-    bothGenders();
+    showAllNames();
 }
 //Reverse the array
 function reverseNames(){
-   all.reverse();
+    all.reverse();
     //document.getElementById("all").innerHTML = all;
-    bothGenders();
-    
+    showAllNames();
 }
 
 
