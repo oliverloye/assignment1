@@ -1,6 +1,7 @@
 var boys = ["Peter", "lars", "Ole"];
 var girls = ["Janne", "hanne", "Sanne"];
 var all = boys.concat(girls);
+
 function bothGenders() {
     var allGenders = boys.concat(girls);
     all = allGenders;
@@ -99,6 +100,21 @@ function removePerson(gender) {
     if ((!document.getElementById("first").checked) && (!document.getElementById("last").checked)) {
         alert("Please select order of removal.");
     }
+}
+
+//Sorts the array
+function sortNames() {
+              
+     all.sort();
+    //document.getElementById("all").innerHTML = all;
+    bothGenders();
+}
+//Reverse the array
+function reverseNames(){
+   all.reverse();
+    //document.getElementById("all").innerHTML = all;
+    bothGenders();
+    
 }
 
 
