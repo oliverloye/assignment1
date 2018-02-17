@@ -1,6 +1,14 @@
-clockbox,
+.main {
+    display: flex;
+    padding: 2em;
+    height: 90vh;
+    justify-content: center;
+    align-items: middle;
+}
+
+.clockbox,
 #clock {
-    width: 100%;
+    height: 100%;
 }
 
 /* Clock styles */
